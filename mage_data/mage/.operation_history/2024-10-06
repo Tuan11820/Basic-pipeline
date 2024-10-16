@@ -1,0 +1,1 @@
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "taxi_data_to_gcs"}, "timestamp": 1728197011, "user": null}
