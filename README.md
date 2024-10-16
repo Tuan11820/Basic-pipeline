@@ -1,9 +1,18 @@
-## 🤔 What is it?
+##  Nguồn dữ liệu đầu vào
+TLC Trip Record Data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page. Với dữ liệu green taxi trip record năm 2022.
 
-This is a Docker Compose template for getting started with a new Mage project.
+## Sử dụng Mage AI orchestration để chuyển đổi 
+### Bước 1
+git clone https://github.com/mage-ai/compose-quickstart.git mage-orchestration \
+&& cd mage-quickstart \
+&& cp dev.env .env \
 
-## 🙋‍♂️ Why did you create it?
+- Chỉnh sửa file .env
+==> docker compose up
 
-We created this template for users to have an easy way to deploy a project using Docker.
-
-Using Docker Compose allows editors to easily add their own images or modify the Mage image to their liking. 
+### Bước 2
+- Mở Browser với http://localhost:6789
+- Điều chỉnh io_config.yaml với profile riêng
+![alt text](image-1.png)
+- tạo pipeline với 3 khối: data loader, tranformer, data exporter:
+![alt text](image.png)
