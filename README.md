@@ -1,7 +1,6 @@
 ##  Nguồn dữ liệu đầu vào
 TLC Trip Record Data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page. Với dữ liệu green taxi trip record năm 2022.
 
-<<<<<<< HEAD
 ## Sử dụng Mage AI orchestration để chuyển đổi 
 ### Bước 1
 git clone https://github.com/mage-ai/compose-quickstart.git mage-orchestration \
