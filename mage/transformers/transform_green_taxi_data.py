@@ -17,7 +17,7 @@ def transform(data, *args, **kwargs):
     )
     passenger_count_zero = data.passenger_count.isin([0]).sum()
     print(f'Preprocessing: rows with zero passenger: {passenger_count_zero}')
-
+    data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt.date
 
     return data[data['passenger_count'] > 0]
 
