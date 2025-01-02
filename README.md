@@ -2,7 +2,6 @@
 TLC Trip Record Data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page. Với dữ liệu green taxi trip record năm 2022.
 
 ## Mage AI orchestration
-![alt text](image-1.png)
 - tạo pipeline với 3 khối: data loader, transformer, data exporter:
 ![alt text](image.png)
     * Data Loader (mage/data_loaders/load_green_taxi_data.py): Đọc dữ liệu parquet file từ urls
